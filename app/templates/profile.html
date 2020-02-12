@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="grid">
+    <div class="tophalf">
+        <div class="photo">
+            <img src="{{url_for('static', filename='kobe.jpg')}}" class="profilephoto" alt="Profile Photo"/>
+        </div>
+        <div class="personalinfo1">
+            <h1>Cleon Foster</h1>
+            <p>@realma3stro aka @cleenster16</p>
+            <p>Hillside, Solum</p>
+            <p>{{ dateJoined }}</p>
+        </div>
+    </div>
+    <div class="basehalf">
+        <div class="personalinfo2">
+            <p>
+                Sometimes mi feel fi cry but the tears dem finish. <br>
+                Man still a wear plastic smile, cause nothing doesnt <br>
+                feel right. Me deeven know when fi happy or timid. <br>
+                Still a hold it out. Mi give thanks fi life. But God know <br>
+                Me feel cut up inside. <br>
+            </p>
+        </div>
+        <div class="profileinfo">
+            <table>
+                <tr>
+                    <th>Posts</th>
+                    <th>Following</th>
+                    <th>Followers</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>867</td>
+                </tr>
+            </table>
+            <button class="button" type="button">Follow</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
